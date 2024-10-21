@@ -1,0 +1,15 @@
+.pageTitle {
+    line-height: 3rem;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 7rem;
+        height: .25rem;
+        border-radius: 12px;
+        background-color: var(--color-gray);
+        left: 0;
+        bottom: -.5rem;
+    }
+}
