@@ -10,9 +10,9 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;
 }
 
-export default function Button({ children, variant = ButtonVariant.light, ...rest }: IButton) {
+export default function Button({ children, className, disabled, variant = ButtonVariant.light, ...rest }: IButton) {
     return (
-        <button className={cn(styles[`button-${variant.toLowerCase()}`],'rounded-full px-4 py-2')} {...rest}>
+        <button className={cn(styles[`button-${variant.toLowerCase()}`], disabled && styles['button-disable'], 'rounded-full px-4 py-2', className)} disabled={disabled} {...rest}>
             {children}
         </button>
     );

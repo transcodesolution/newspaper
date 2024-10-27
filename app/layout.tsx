@@ -4,6 +4,7 @@ import "@/lib/styles/global.scss";
 import Header from "@/lib/components/layouts/header";
 import Footer from "@/lib/components/layouts/footer";
 
+
 const ptSerifRegular = localFont({
   src: '../lib/fonts/PT_Serif/PTSerif-Regular.ttf',
   variable: '--font-ptserif-regular',

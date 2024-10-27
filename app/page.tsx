@@ -1,4 +1,4 @@
-import PageTitle from "./_components/page-title";
+import PageTitle from "@/lib/components/custom/page-title";
 
 export default function Home() {
   return (

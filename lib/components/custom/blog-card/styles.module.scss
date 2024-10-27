@@ -1,0 +1,22 @@
+.blogCardBody {
+    width: 95%;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+    .blogCardKeywords {
+        left: -1px;
+        border: 1px solid var(--border-light);
+        border-bottom: 0;
+
+        @media screen and (max-width:768px) {
+            width: 100.6%;
+            position: unset;
+            border: none;
+            padding: 0;
+            padding-top: 1rem;
+        }
+
+    }
+}
