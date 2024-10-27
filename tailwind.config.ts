@@ -12,6 +12,11 @@ const config: Config = {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        light: {
+          0: '#DEDEDE',
+          text: "var(--text-light)",
+          border: "var(--border-light)"
+        }
       },
     },
   },

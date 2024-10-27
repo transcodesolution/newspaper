@@ -7,3 +7,8 @@
     background-color: var(--color-primary);
     color: var(--color-secondary);
 }
+
+.button-disable {
+    cursor: not-allowed;
+    opacity: .5;
+}
