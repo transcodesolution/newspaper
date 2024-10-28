@@ -1,9 +1,7 @@
-import PageTitle from "@/lib/components/custom/page-title";
+import BlogsPage from "./blogs/[...category]/page";
 
 export default function Home() {
   return (
-    <section className="container mx-auto">
-      <PageTitle>Latest News</PageTitle>
-    </section>
+    <BlogsPage />
   );
 }

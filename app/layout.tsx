@@ -27,7 +27,9 @@ export default function RootLayout({
         className={`${ptSerifRegular.variable} antialiased`}
       >
         <Header />
-        {children}
+        <section style={{ minHeight: `calc(100vh - 73px)` }}>
+          {children}
+        </section>
         <Footer />
       </body>
     </html>
