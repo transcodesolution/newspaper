@@ -58,17 +58,19 @@ const getBlogs = async (): Promise<IBlog[]> => {
         }, 1000);
     })
 }
-export default async function BlogPage() {
+export default async function BlogsPage() {
     const blogs = await getBlogs();
     console.log(blogs, 'response');
     return (
-        <section className="container mx-auto py-16 px-8">
-            <PageTitle>Latest News</PageTitle>
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12'>
-                {
-                    blogs.map((blog) => <BlogCard blog={blog} key={blog.title} />)
-                }
-                <ClientSideBlogs serverSideLoadBlogCount={blogs.length} />
+        <section className="py-16 px-8">
+            <div className='container mx-auto'>
+                <PageTitle>Latest News</PageTitle>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12'>
+                    {
+                        blogs.map((blog) => <BlogCard blog={blog} key={blog.title} />)
+                    }
+                    <ClientSideBlogs serverSideLoadBlogCount={blogs.length} />
+                </div>
             </div>
         </section>
     )
