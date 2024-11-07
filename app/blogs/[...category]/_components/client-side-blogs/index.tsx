@@ -17,6 +17,7 @@ export default function ClientSideBlogs({ serverSideLoadBlogCount }: IClientSide
 
     useEffect(() => {
         if (count > serverSideLoadBlogCount) {
+            //here we need to call api to fetch the blogs
             const additionalBlogs = blogData.slice(serverSideLoadBlogCount, count); // Load all blogs up to the count
             setBlogs(additionalBlogs);
         }
